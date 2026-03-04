@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIPH PRO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Cairo', 'sans-serif'],
+            },
+            colors: {
+              border: '#E5E7EB', // gray-200
+              background: '#F9FAFB', // gray-50
+              foreground: '#1F2937', // gray-800
+              card: '#FFFFFF',
+              
+              primary: '#059669', // emerald-600
+              'primary-dark': '#065f46', // emerald-800
+              'primary-foreground': '#FFFFFF',
+              
+              secondary: '#F3F4F6', // gray-100
+              'secondary-foreground': '#374151', // gray-700
+              
+              destructive: '#DC2626', // red-600
+              'destructive-dark': '#991B1B', // red-800
+              
+              muted: '#6B7280', // gray-500
+              
+              accent: '#F9FAFB', // gray-50
+
+              'slate-300': '#D1D5DB', // gray-300
+              
+              // Screen specific accent colors
+              'theme-dashboard': '#059669', // emerald-600
+              'theme-tickets': '#D97706', // amber-600
+              'theme-quickLinks': '#059669', // emerald-600
+              'theme-inventory': '#5B21B6', // violet-700
+              'theme-users': '#BE185D', // pink-700
+              'theme-departments': '#0D9488', // teal-600
+              'theme-appearance': '#7C3AED', // purple-600
+              'theme-settings': '#4B5563', // gray-600
+              'theme-light-blue': '#10b981', // emerald-500
+            },
+            boxShadow: {
+              'luxury': '0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.07)',
+            },
+            borderRadius: {
+                'xl': '0.75rem',
+                'lg': `0.5rem`,
+                'md': `0.375rem`,
+            },
+            backgroundSize: {
+              '200%': '200% 100%',
+            },
+            keyframes: {
+              'pulse-red': {
+                '0%, 100%': { 
+                    backgroundColor: 'rgba(185, 28, 28, 0.9)',
+                    boxShadow: '0 0 0 0 rgba(185, 28, 28, 0.7)'
+                },
+                '50%': { 
+                    backgroundColor: 'rgba(220, 38, 38, 0.95)',
+                    boxShadow: '0 0 20px 10px rgba(220, 38, 38, 0)'
+                },
+              },
+              'background-pan': {
+                '0%': { backgroundPosition: '0% center' },
+                '100%': { backgroundPosition: '-200% center' },
+              },
+            },
+            animation: {
+              'pulse-red': 'pulse-red 1.5s infinite',
+              'background-pan': 'background-pan 8s linear infinite',
+            },
+          },
+        },
+      }
+    </script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://unpkg.com/jspdf-autotable@latest/dist/jspdf.plugin.autotable.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "vite": "https://aistudiocdn.com/vite@^7.2.2",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.0",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "cors": "https://aistudiocdn.com/cors@^2.8.5",
+    "url": "https://aistudiocdn.com/url@^0.11.4",
+    "fs": "https://aistudiocdn.com/fs@^0.0.1-security",
+    "nodemailer": "https://aistudiocdn.com/nodemailer@^7.0.11",
+    "multer": "https://esm.sh/multer@^2.0.2",
+    "mysql2/": "https://esm.sh/mysql2@^3.16.0/",
+    "socket.io": "https://esm.sh/socket.io@^4.8.3",
+    "http": "https://esm.sh/http@^0.0.1-security",
+    "socket.io-client": "https://esm.sh/socket.io-client@^4.8.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

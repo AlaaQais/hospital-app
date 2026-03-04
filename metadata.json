@@ -1,0 +1,7 @@
+{
+  "name": " AIPH PRO-18-Ready-with call",
+  "description": "A comprehensive IT management system for handling support tickets, inventory, user management, and internal communication, designed with a luxurious and elegant user interface.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
